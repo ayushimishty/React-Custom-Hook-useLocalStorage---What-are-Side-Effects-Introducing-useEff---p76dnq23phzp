@@ -5,7 +5,6 @@ import useLocalStorage from "./useLocalStorage";
 const App = () => {
   const [state, setState] = useLocalStorage("key", null);
   const inputRef = useRef(null);
-
   const submitHandler = (e) => {
     e.preventDefault();
     const text = inputRef.current.value;
